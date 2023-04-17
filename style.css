@@ -1,0 +1,53 @@
+.background {
+    background-image: url(/img/street.jpg);
+    height: 26rem;
+}
+
+.block {
+    position: relative;
+    top: 11.5rem;
+    left: 113rem;
+    margin-bottom: 1.4rem;
+}
+
+.car {
+    position: relative;
+    top: 19rem;
+    margin-bottom: 1.5rem;
+}
+
+.go {
+    animation-name: race;
+    animation-timing-function: ease-in-out;
+}
+
+.fast {
+    animation-duration: 7.8s;
+}
+
+.slow {
+    animation-duration: 10s;
+}
+
+
+
+@keyframes race {
+
+
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(90%);
+    }
+
+    80% {
+        transform: rotatey(180deg);
+    }
+
+    100% {
+        transform: translateX(0);
+
+    }
+}
